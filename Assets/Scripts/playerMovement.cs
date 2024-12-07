@@ -52,9 +52,9 @@ public class playerMovement : MonoBehaviour
 
         if (other.gameObject.CompareTag("Ground")){
             Vector3 normal = other.GetContact(0).normal;
-        if(normal == Vector3.up){
-                grounded = true;
-            }
+            if(normal == Vector3.up){   // This implementation has problems with tilted surfaces.
+                    grounded = true;
+                }
         }
     }
 
