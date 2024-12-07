@@ -64,3 +64,5 @@ public class playerMovement : MonoBehaviour
         }
     }
 }
+
+// THE GIZMOS DOES WORK: It just needs configuration thorugh Unity's UI in the editor
